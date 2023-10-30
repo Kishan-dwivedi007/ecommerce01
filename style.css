@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/*header*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e3e6f3;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 2vh 5vw;
+    position: sticky;
+    z-index: 99;
+    left: 0;
+    top: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    bottom: -4px;
+    background-color: #088178;
+    left: 0px;
+    position: absolute;
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    bottom: -4px;
+    background-color: #088178;
+    left: 0px;
+    position: absolute;
+}
+
+/*hero section*/
+#hero {
+    background-image: url('img/hero4.png');
+    height: 89.3vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#hero h4 {
+    padding-bottom: 1vh;
+    font-size: 2vw;
+}
+
+#hero h2,
+h1 {
+    font-size: 4vw;
+    line-height: 8vh;
+}
+
+#hero h1 {
+    color: #088178;
+    padding-bottom: 1.5vh;
+}
+
+#hero p {
+    font-size: 1.5vw;
+    padding-bottom: 1vh;
+}
+
+#hero button {
+    background-image: url('img/button.png');
+    border: 0;
+    background-color: transparent;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+/*feature*/
+#feature {
+    margin: 7vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fe-box {
+    text-align: center;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    width: 13vw;
+    height: 33vh;
+    padding: 5vh 0vw;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+}
+
+#feature .fe-box:nth-child(2) h4 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h4 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h4 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h4 {
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h4 {
+    background-color: #fff2e5;
+}
+
+.fe-box h4 {
+    padding: 9px 8px 6px 8px;
+    display: inline-block;
+    background-color: #fddde4;
+    color: #088178;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.fe-box img {
+    width: 100%;
+    margin-bottom: 0.5vh;
+}
+
+.fe-box:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.03);
+}
+
+#products {
+    text-align: center;
+    margin: 10vh 5vw;
+
+}
+
+#products h1 {
+    line-height: 12vh;
+}
+
+#products p {
+    color: #8d8d8d;
+}
+
+.pro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+.pro-container .pro {
+    margin-bottom: 5vh;
+}
+
+#products .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#products .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0);
+}
+
+#products .pro img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+#products .pro .desc {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#products .pro .desc span {
+    color: #606063;
+    font-size: 1.2vw;
+}
+
+#products .pro .desc h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 1.3vw;
+
+}
+
+#products .pro .desc i {
+    font-size: 1vw;
+    color: rgb(243, 181, 25);
+}
+
+#products .pro .desc h4 {
+    padding-top: 7px;
+    font-size: 1vw;
+    font-weight: 700;
+    color: #088178;
+
+}
+
+#products .pro a i {
+    width: 3vw;
+    display: block;
+    height: 6vh;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/*Banner*/
+
+#banner {
+    text-align: center;
+    background-image: url('img/banner/b2.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#banner h4,
+h2 {
+    color: #fff;
+    font-size: 2vw;
+}
+
+#banner h2 {
+    font-size: 4vw;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: rgb(222, 230, 103);
+}
+
+#banner button {
+    padding: 2vh 4vw;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #088178;
+    color: #fff;
+    box-shadow: 0.5px 0px 2px rgba(235, 235, 235, 0.733);
+    transition: 0.3s ease;
+}
+
+#banner button:hover {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+}
+
+#sm-banner {
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+#sm-banner .banner-box:hover button {
+    background-color: #088178;
+    border: none;
+}
+
+#sm-banner .banner-box {
+    background-image: url('img/banner/b17.jpg');
+    min-width: 580px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+    /* background-position: center; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2vw;
+}
+
+#sm-banner .banner-box:nth-child(2) {
+    background-image: url('img/banner/b10.jpg');
+}
+
+#sm-banner .banner-box h2 {
+    font-size: 3vw;
+    color: #fff;
+
+}
+
+#sm-banner .banner-box h4 {
+    font-size: 1.5vw;
+    line-height: 6vh;
+    color: #fff;
+}
+
+#sm-banner .banner-box span {
+    font-size: 1.5vw;
+    line-height: 6vh;
+    padding-bottom: 1vh;
+    color: #fff;
+}
+
+#sm-banner .banner-box button {
+    padding: 2vh 2vw;
+
+    border: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.03);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#sm-banner .banner-box button:hover {
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0);
+
+}
